@@ -1,22 +1,315 @@
 <!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JV Racasa</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>JoVi-Racasa</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
 
-<h1>Hello World</h1>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/fixed.css" />
+	</head>
 
+	<body data-spy="scroll" data-target="#navbarResponsive">
+		<!-- Start Home Section -->
+		<div id="home">
+			<!-- Navigation -->
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+				<a href="index.html" class="navbar-brand"><h3>JoVi.</h3></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarResponsive"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#home" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#portfolio" class="nav-link">Portfolio</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a href="#team" class="nav-link">Team</a>
+						</li> -->
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Start of Image Slider -->
+			<div
+				id="carouselExampleIndicators"
+				class="carousel slide"
+				data-ride="carousel"
+				data-interval="5000"
+			>
+				<!-- Start of Carousel Inner -->
 
-<!--- Script Source Files -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
+				<ol class="carousel-indicators">
+					<li
+						data-target="#carouselExampleIndicators"
+						data-slide-to="0"
+						class="active"
+					></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<!-- Image Slider 1 -->
+					<div
+						class="carousel-item active"
+						style="background-image: url(img/computers.png);"
+					>
+						<div class="carouesel-caption text-center">
+							<h1>JOHN VINCENT RACASA.</h1>
+							<h3>Aspiring Web Developer</h3>
+							<a href="#about" class="btn btn-outline-light btn-lg"
+								>Know me more</a
+							>
+						</div>
+					</div>
+					<!-- Image Slider 2 -->
+					<div
+						class="carousel-item"
+						style="background-image: url(img/computers-2.png);"
+					>
+						<div class="carouesel-caption text-center">
+							<h3>" If you think Math is hard, try Web Design "</h3>
+						</div>
+					</div>
+					<!-- Image Slider 2 -->
+					<div
+						class="carousel-item"
+						style="background-image: url(img/computers-3.png);"
+					>
+						<div class="carouesel-caption text-center">
+							<h3>" Never dream about success, work for it! "</h3>
+						</div>
+					</div>
+				</div>
+				<!-- End of Carousel Inner -->
+				<!--  --->
+				<!-- Start of Prev&Next Button -->
+				<a
+					class="carousel-control-prev"
+					href="#carouselExampleIndicators"
+					role="button"
+					data-slide="prev"
+					><span
+						class="carousel-control-prev-icon"
+						area-hidden="true"
+					></span></a
+				><a
+					class="carousel-control-next"
+					href="#carouselExampleIndicators"
+					role="button"
+					data-slide="next"
+					><span class="carousel-control-next-icon" area-hidden="true"></span
+				></a>
+			</div>
+			<!-- End of Image Slider -->
+		</div>
+		<!-- End Home Section -->
+		<!--  --->
+		<!-- Start about Section -->
+		<div id="about" class="offset">
+			<div class="col-12 narrow text-center">
+				<h1>About me</h1>
+				<p class="lead">
+					My passion for programming came about after I graduated with my BS in
+					Electrical Engineering and got my licensed as Electrical Engineer. I
+					was introduced to programming as a hobby, starting off with HTML/CSS
+					and JavaScript. My first project was a portfolio website I was using
+					to provide visualizations about my habits and some stuff that I like
+					during my studies. That portfolio took about 3 weeks to finish, and
+					reflecting back now, it was pretty bad. I had no idea what media
+					queries were, it wasn't responsive, the images were pixelated, I
+					didn't even know how to make some text go to the middle of the page,
+					but the process made me realize that I loved creating software...
+				</p>
+			</div>
+		</div>
+		<!--- End about Section -->
+
+		<!-- Start Porfolio Section -->
+		<div id="portfolio" class="offset">
+			<div class="jumbotron container-fluid">
+				<div class="col-12 text-center">
+					<h3 class="heading">Portfolio</h3>
+					<div class="heading-underline"></div>
+				</div>
+
+				<div class="row no-padding">
+					<div class="col-sm-4">
+						<div class="portfolio">
+							<a href="img/portfolio/1.png" target="_blank">
+								<img src="img/portfolio/1.png" alt="Image"
+							/></a>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="portfolio">
+							<a href="img/portfolio/2.png" target="_blank">
+								<img src="img/portfolio/2.png" alt="Image"
+							/></a>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="portfolio">
+							<a href="img/portfolio/3.png" target="_blank">
+								<img src="img/portfolio/3.png" alt="Image"
+							/></a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="portfolio">
+							<a href="img/portfolio/4.png" target="_blank">
+								<img src="img/portfolio/4.png" alt="Image"
+							/></a>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="portfolio">
+							<a href="img/portfolio/5.png" target="_blank">
+								<img src="img/portfolio/5.png" alt="Image"
+							/></a>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="portfolio">
+							<a href="img/portfolio/6.png" target="_blank">
+								<img src="img/portfolio/6.png" alt="Image"
+							/></a>
+						</div>
+					</div>
+
+					<div class="narrow text-center">
+						<div class="col-12">
+							<p class="lead">Projects under Delepement...</p>
+							<a
+								class="btn btn-outline-dark btn-md"
+								href="https://github.com/Jovi-tech/"
+								target="_blank"
+								>See my Repository</a
+							>
+						</div>
+					</div>
+				</div>
+				<!--End of Row-->
+			</div>
+			<!--End of Jumbotron-->
+		</div>
+		<!-- End Porfolio Section -->
+
+		<!-- Start Team Section -->
+		<!-- <div id="team" class="offset">
+			<div class="col-12 text-center">
+				<h3 class="heading">Meet the Team</h3>
+				<div class="heading-underline"></div>
+			</div>
+
+			<div class="row padding">
+				<div class="col-md-6">
+					<div class="card text-center">
+						<img src="/img/team/team1.png" alt="team" class="card-img-top" />
+						<div class="card-body">
+							<h4>Jessica Miller</h4>
+							<p>
+								I have over 10 years of experience in tachnology and haven't
+								worked with a better team than Nanu
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="card text-center">
+						<img src="/img/team/team2.png" alt="team" class="card-img-top" />
+						<div class="card-body">
+							<h4>Charles Davis</h4>
+							<p>
+								I have over 10 years of experience in tachnology and haven't
+								worked with a better team than Nanu
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- End Team Section -->
+
+		<!-- Start Contact Section -->
+		<div id="contact" class="offset">
+			<footer>
+				<div class="row justify-content-center">
+					<div class="col-md-5 text-center">
+						<h2>JOVI.</h2>
+						<p>
+							Believe in yourself and all that you are. Know that their is
+							something inside you that is greater than any obstacle.
+						</p>
+						<strong>Contact Info</strong>
+						<p>
+							999-888-7777 <br />
+							myEmail@email.com
+						</p>
+
+						<a
+							href="https://www.facebook.com/johnvincent.racasa"
+							target="_blank"
+							><span
+								class="fa fa-facebook-square fa-2x"
+								aria-hidden="true"
+							></span
+						></a>
+
+						<a
+							href="https://ph.linkedin.com/in/john-vincent-racasa-b9a284118"
+							target="_blank"
+							><span
+								class="fa fa-linkedin-square fa-2x"
+								area-hidden="true"
+							></span
+						></a>
+
+						<a href="https://github.com/Jovi-tech/" target="_blank"
+							><span class="fa fa-github fa-2x" area-hidden="true"></span
+						></a>
+					</div>
+
+					<hr class="socket" />
+
+					&copy; Jovi-Racasa. 2020
+				</div>
+			</footer>
+		</div>
+		<!-- End Contact Section -->
+
+		<!--- Script Source Files -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<!--- End of Script Source Files -->
+	</body>
 </html>
-
-
-
